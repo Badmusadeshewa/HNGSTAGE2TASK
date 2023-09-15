@@ -12,16 +12,10 @@ const createPerson = (req, res) => {
       email: req.body.email
     };
   
-    // Save the person to the database
-    // person.save((err, person) => {
-    //         if (err) {
-    //          return res.status(500).json({ error: 'Error creating a person in the database.' });
-    //           }
-          
-    //          res.json(person);
-    //         });
+   // Save the person to the database
+  // ...
             
-            // Return the success message
+   // Return the success message
     res.status(200).send({ message: 'Person created successfully' });
   };
   
