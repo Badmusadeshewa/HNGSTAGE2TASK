@@ -14,7 +14,7 @@ const {
 const router = require('express').Router();
 
 // Route handlers
-router.post('/person', createPerson);
+router.post('/', createPerson);
 router.get('/person', getAllPerson);
 router.get('/person/:id', getPerson);
 router.put('/person/:id', updatePerson);
