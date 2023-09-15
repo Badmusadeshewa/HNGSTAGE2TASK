@@ -13,13 +13,13 @@ const createPerson = (req, res) => {
     };
   
     // Save the person to the database
-    person.save((err, person) => {
-            if (err) {
-             return res.status(500).json({ error: 'Error creating a person in the database.' });
-              }
+    // person.save((err, person) => {
+    //         if (err) {
+    //          return res.status(500).json({ error: 'Error creating a person in the database.' });
+    //           }
           
-             res.json(person);
-            });
+    //          res.json(person);
+    //         });
             
             // Return the success message
     res.status(200).send({ message: 'Person created successfully' });
