@@ -76,7 +76,7 @@ Example request body:
 
 Get a Specific Person (GET): /api/:id
 
-Example URL: /api
+Example URL: /api/:id
 
 3. Update a Person (PUT/PATCH): /api/:id
 
