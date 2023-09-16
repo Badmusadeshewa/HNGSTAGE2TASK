@@ -1,8 +1,8 @@
- HNGSTAGE2TASK
+ ## HNGSTAGE2TASK
 
-Express.js CRUD API with MongoDB and Mongoose
+## Express.js CRUD API with MongoDB and Mongoose
 
- Table of Contents
+## Table of Contents
 
 - [1. Prerequisites](#1-prerequisites)
 - [2. Project-Structure](#2-project-structure)
