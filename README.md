@@ -40,24 +40,26 @@ To run this project locally, follow these steps:
 
 git clone https://github.com/Badmusadeshewa/hngstage2task.git
 
-2. Change to the project directory: Navigate to the project's root directory:
-cd cd your-app
+2. Change to the project directory: Navigate to the project's root directory cd: cd your-app
 
 3. Install Dependencies: Install the project dependencies using npm:
 npm install
 
 4. Start the Application: Run npm to start the application
-npm start
+npm start,
+
 npm run
 # 4. Configuration
 Create a .env file in the project root directory. This may include database connection strings, API keys, or any other sensitive information.
  Example
+ 
 PORT=3000
 
 MONGO_URI=mongodb://localhost:27017/HNGTASK`
 
 # 5. Start the server:
 node index.js
+
 The server will be running at http://localhost:3000.
 
 # 6. API Endpoints
@@ -70,15 +72,15 @@ Example request body:
   "email": "johndoe@example.com"
 }
 
-2. Get All Persons (GET): /api/person
+2. Get All Persons (GET): /api
 
-Get a Specific Person (GET): /api/person/:user_id
+Get a Specific Person (GET): /api/:id
 
-Example URL: /api/person/1
+Example URL: /api
 
-3. Update a Person (PUT/PATCH): /api/person/:user_id
+3. Update a Person (PUT/PATCH): /api/:id
 
-Example URL: /api/person/1
+Example URL: /api/:id
 
 Example request body:
 {
@@ -87,9 +89,9 @@ Example request body:
   "email": "updatedemail@example.com"
 }
 
-4. Delete a Person (DELETE): /api/person/:user_id
+4. Delete a Person (DELETE): /api/:id
 
-Example URL: /api/person/1
+Example URL: /api/:id
 
 # 7. Dependencies
 
