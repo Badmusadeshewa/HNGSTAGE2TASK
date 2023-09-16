@@ -52,7 +52,7 @@ npm run
 # 4. Configuration
 Create a .env file in the project root directory. This may include database connection strings, API keys, or any other sensitive information.
  Example
- 
+
 PORT=3000
 
 MONGO_URI=mongodb://localhost:27017/HNGTASK`
@@ -63,7 +63,7 @@ node index.js
 The server will be running at http://localhost:3000.
 
 # 6. API Endpoints
-1. Create a Person (POST): /api/person
+1. Create a Person (POST): /api
 
 Example request body:
 {
