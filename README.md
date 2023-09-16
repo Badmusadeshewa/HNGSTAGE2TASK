@@ -38,7 +38,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository: start by cloning this Repository using git. Open your terminal and run
 
-git clone https://github.com/Badmusadeshewa/hngtaskstage2
+git clone https://github.com/Badmusadeshewa/hngstage2task.git
 
 2. Change to the project directory: Navigate to the project's root directory:
 cd cd your-app
