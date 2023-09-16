@@ -1,105 +1,113 @@
- ## HNGSTAGE2TASK
+# Express CRUD API
 
-## Express.js CRUD API with MongoDB and Mongoose
+An Express.js CRUD (Create, Read, Update, Delete) API for managing resources with a "name" attribute.
 
 ## Table of Contents
 
-- [1. Prerequisites](#1-prerequisites)
-- [2. Project-Structure](#2-project-structure)
-- [3. Installation and Usage](#3-installation-and-usage)
-- [4. Configuration](#4-configuration)
-- [5. Start the server:](#5-start-the-server)
-- [6. API Endpoints](#6-api-endpoints)
-- [7. Dependencies](#7-dependencies)
-- [8. Contributors](#8-contributors)
-- [9. License](#9-license)
+- [Express CRUD API](#express-crud-api)
+  - [Table of Contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Getting Started](#getting-started)
+    - [Installation](#installation)
+    - [Configuration](#configuration)
+    - [Running the API](#running-the-api)
+  - [Endpoints](#endpoints)
+    - [1. Create a New User](#1-create-a-new-user)
+    - [2. Read User Data](#2-read-user-data)
+    - [3. Update User Data](#3-update-user-data)
+    - [4. Delete User](#4-delete-user)
+  - [UML DIAGRAM](#uml-diagram)
 
-# 1. Prerequisites
+## Prerequisites
+
 Before you begin, ensure you have met the following requirements:
-Node.js and npm installed. Download Node.js
 
-# 2. Project-Structure
-This is a simple Express.js application that demonstrates CRUD (Create, Read, Update, Delete) operations for a "Person" entity using MongoDB and Mongoose. The project is structured as follows:
+- Node.js and npm installed. [Download Node.js](https://nodejs.org/)
 
-- `controller` folder: Contains the controller logic for creating, updating, getting, and deleting persons.
-  - `personcontroler.js`: Defines the controller functions for the API routes.
+## Getting Started
 
-- `models` folder: Contains the schema and model definition for the "Person" entity.
-  - `person.js`: Defines the schema and model for the "Person" entity.
+### Installation
 
-- `route` folder: Contains the route definitions for the Express.js application.
-  - `route.js`: Defines the API routes for creating, getting, updating, and deleting persons.
+1. Clone the repository:
 
-- `index.js`: The main application file where all the folders and dependencies are imported and the Express server is launched.
+   - git clone <repository-url>
+   - cd express-crud-api
 
-# 3. Installation and Usage
+2. Install dependencies:
 
-To run this project locally, follow these steps:
+   - npm install
 
-1. Clone the repository: start by cloning this Repository using git. Open your terminal and run
+### Configuration
 
-git clone https://github.com/Badmusadeshewa/hngstage2task.git
+- Create a `.env` file in the project root and configure environment-specific variables there.
+- ### Example
+  - PORT=3000
+  - MONGO_URI=mongodb://localhost:27017/hng`
 
-2. Change to the project directory: Navigate to the project's root directory cd: cd your-app
+### Running the API
 
-3. Install Dependencies: Install the project dependencies using npm:
-npm install
+Start the API locally using the following commands:
 
-4. Start the Application: Run npm to start the application
-npm start,
+    - npm start
+    - npm run dev
 
-npm run
-# 4. Configuration
-Create a .env file in the project root directory. This may include database connection strings, API keys, or any other sensitive information.
- Example
+The API will be accessible at http://localhost:3000 by default.
 
-PORT=3000
+## Endpoints
 
-MONGO_URI=mongodb://localhost:27017/HNGTASK`
+The base URL for all API endpoints is: [https://](https://hngtask2-08s5.onrender.com)
 
-# 5. Start the server:
-node index.js
+### 1. Create a New User
 
-The server will be running at http://localhost:3000.
+- **Endpoint:** `/api`
+- **HTTP Method:** POST
+- **Url**: [https:///api](https://hngtask2-08s5.onrender.com/api)
+- **Request Body**: JSON with a "name" field
 
-# 6. API Endpoints
-1. Create a Person (POST): /api
+- **Example**:
+  ```json
+  {
+    "name": "Mark Brown"
+  }
+  ```
 
-Example request body:
+### 2. Read User Data
+
+- **Endpoint:** `/{userId}`
+- **HTTP Method:** GET
+- **Url**: [https:///api/{userId}](https://hngtask2-08s5.onrender.com/api/{userId})
+
+  - on success:
+
+  ```json
+  {
+    "id": "12345",
+    "name": "Mark Brown"
+  }
+  ```
+
+### 3. Update User Data
+
+- **Endpoint**: `/{userId}`
+- **HTTP Method:** PUT
+- **Url**: [https:///api/{userId}](https://hngtask2-08s5.onrender.com/api/{userId})
+- **Request Body**: JSON with a "name" field
+
+  - **Example**:
+    `json
 {
-  "name": "John Doe",
-  "age": 30,
-  "email": "johndoe@example.com"
+  "name": "John Doe"
 }
+`
 
-2. Get All Persons (GET): /api
+### 4. Delete User
 
-Get a Specific Person (GET): /api/:id
+- **Endpoint:** `/{userId}`
+- **HTTP Method:** DELETE
+- **Url**: [https:///api/{userId}](https://hngtask2-08s5.onrender.com/api/{userId})
 
-Example URL: /api/:id
+## UML DIAGRAM
 
-3. Update a Person (PUT/PATCH): /api/:id
+![diagram](img/uml.png)
 
-Example URL: /api/:id
-
-Example request body:
-{
-  "name": "Updated Name",
-  "age": 35,
-  "email": "updatedemail@example.com"
-}
-
-4. Delete a Person (DELETE): /api/:id
-
-Example URL: /api/:id
-
-# 7. Dependencies
-
-Express.js: A web application framework for Node.js.
-Mongoose: An Object Data Modeling (ODM) library for MongoDB and Node.js.
-
-# 8. Contributors
-Badmus Adeshewa
-
-# 9. License
-License
+- **Url**: [link to the UML file](https://github.com/debanjo31/hngtask2/blob/main/img/uml.png)
