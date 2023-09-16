@@ -16,7 +16,7 @@ An Express.js CRUD (Create, Read, Update, Delete) API for managing resources wit
     - [2. Read User Data](#2-read-user-data)
     - [3. Update User Data](#3-update-user-data)
     - [4. Delete User](#4-delete-user)
-  - [UML DIAGRAM](#uml-diagram)
+  
 
 ## Prerequisites
 
@@ -55,19 +55,19 @@ The API will be accessible at http://localhost:3000 by default.
 
 ## Endpoints
 
-The base URL for all API endpoints is: [https://](https://hngtask2-08s5.onrender.com)
+The base URL for all API endpoints is: [https://](https://hngstage2task-ecde.onrender.com)
 
 ### 1. Create a New User
 
 - **Endpoint:** `/api`
 - **HTTP Method:** POST
-- **Url**: [https:///api](https://hngtask2-08s5.onrender.com/api)
+- **Url**: [https:///api](https://hngstage2task-ecde.onrender.com/api)
 - **Request Body**: JSON with a "name" field
 
 - **Example**:
   ```json
   {
-    "name": "Mark Brown"
+    "name": "Badmus Adeshewa"
   }
   ```
 
@@ -75,14 +75,14 @@ The base URL for all API endpoints is: [https://](https://hngtask2-08s5.onrender
 
 - **Endpoint:** `/{userId}`
 - **HTTP Method:** GET
-- **Url**: [https:///api/{userId}](https://hngtask2-08s5.onrender.com/api/{userId})
+- **Url**: [https:///api/{userId}](https://hngstage2task-ecde.onrender.com/api/{userId})
 
   - on success:
 
   ```json
   {
     "id": "12345",
-    "name": "Mark Brown"
+    "name": "Badmus Adeshewa"
   }
   ```
 
@@ -90,13 +90,13 @@ The base URL for all API endpoints is: [https://](https://hngtask2-08s5.onrender
 
 - **Endpoint**: `/{userId}`
 - **HTTP Method:** PUT
-- **Url**: [https:///api/{userId}](https://hngtask2-08s5.onrender.com/api/{userId})
+- **Url**: [https:///api/{userId}](https://hngstage2task-ecde.onrender.com/api/{userId})
 - **Request Body**: JSON with a "name" field
 
   - **Example**:
     `json
 {
-  "name": "John Doe"
+  "name": "Adeshewa"
 }
 `
 
@@ -104,10 +104,6 @@ The base URL for all API endpoints is: [https://](https://hngtask2-08s5.onrender
 
 - **Endpoint:** `/{userId}`
 - **HTTP Method:** DELETE
-- **Url**: [https:///api/{userId}](https://hngtask2-08s5.onrender.com/api/{userId})
+- **Url**: [https:///api/{userId}](https://hngstage2task-ecde.onrender.com/api/{userId})
 
-## UML DIAGRAM
 
-![diagram](img/uml.png)
-
-- **Url**: [link to the UML file](https://github.com/debanjo31/hngtask2/blob/main/img/uml.png)
