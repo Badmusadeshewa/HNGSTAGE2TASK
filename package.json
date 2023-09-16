@@ -19,7 +19,7 @@
     "jsdoc": "^4.0.2",
     "mongoose": "^7.5.0"
   },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
+  "engines": {
+    "node": "20.x"
   }
-}
+  }
